@@ -187,9 +187,8 @@ body {
 
  .right-container {
    position: relative;
-   left: 0%;
+   left: 2%;
     max-width: 320px;
-    border: 2px solid red;
  }
 
   .mini-container p strong {
@@ -200,7 +199,7 @@ body {
  .mini-container {
    text-align: center;
    padding: 15px 15px;
-   border-radius: 3px;
+   border-radius: 5px;
    font-size: 14px;
    text-align: center;
  }
@@ -220,7 +219,6 @@ body {
   font-weight: 400;
   font-size: 9px;
   width: 80%;
-  /* margin-right: 4rem; */
 }
    
 #form p span {
