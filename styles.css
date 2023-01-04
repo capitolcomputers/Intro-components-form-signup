@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root {
+--Dark-Blue: hsl(249, 10%, 26%);
+--Grayish-Blue: hsl(246, 25%, 77%);
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--Red: hsl(0, 100%, 74%) ;
+--black: rgba(0,0,0, 0.2) ;
+--white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+ max-width: 1200px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--Red);
+  min-height: 100vh;
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+ display: flex;
+ /* flex-direction: column; */
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+
+.left-container {
+    width: 40%;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    position: relative;
+    left: 2rem;
+ }
+
+ .left-container h2 {
+   font-size: 35px;
+   font: 600;
+   margin-bottom: 4rem;
+   padding-right: 6rem;
+   color: var(--white);
+ }
+
+ .left-container p {
+   font-size: 17px;
+   line-height: 22px;
+   letter-spacing: 1.4;
+   width: 95%;
+   font-weight: 500;
+   color: var(--white);
+   padding-right: 3rem;
+ }
+
+ .right-container {
+   position: relative;
+   left: 3rem;
+    max-width: 35%;
+ }
+
+ .mini-container {
+   background-color: var(--Blue);
+   padding: 18px 5px;
+   border-radius: 2px;
+   color: var(--white);
+   font-size: 14px;
+   text-align: center;
+   margin-bottom: 1rem;
+ }
+
+ #form {
+   width: 100%;
+   padding: 4rem 0 0 3rem;
+   height: 35rem;
+    justify-self: center;
+   background-color: var(--white);
+   border-radius: 5px;
+ }
+
+  #form input {
+    display: block;
+    width: 90%;
+    height: 3rem;
+    padding: 6px 0 6px 10px;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(0,0,0, 0.4);
+    border-radius: 5px;
+  }
+
+#form input:focus {
+  outline: none;
+  border-color: red;
+} 
+
+#form.error input {
+  border-color: green;
+}
+
+#form.error input {
+  border-color: red;
+}
+  
+  #form small {
+      display: none;
+    }
+    
+#btn {
+  background-color: var(--Green);
+   padding: 10px 5px;
+   color: var(--white);
+   font-size: 14px;
+   text-align: center;
+   width: 90%;
+   border: none;
+   border-radius: 7px;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+  }
+
+#form p {
+  color: var(--Dark-Blue);
+  font-weight: 400;
+  font-size: 10px;
+  padding-left: 5px;
+}
+   
+#form p span {
+     color: rgba(255, 0, 0, 0.685);
+}
+
+
+@media screen and (max-width: 460px) {
+  body {
+  width: 100%;
+  margin: auto;
+  background-image: url(../images/bg-intro-mobile.png);
+  min-height: 100vh;
+  }
+
+.main-container {
+  text-align: center;
+  padding-right: 2rem;
+  margin-top: 0rem;
+  width: 100%;
+  flex-direction: column;
+  }
+
+
+.left-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5rem;
+ }
+
+ .left-container h2 {
+   font-size: 27px;
+   margin-bottom: 3rem;
+   padding-left: 2rem;
+ }
+
+ .left-container p {
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 1.4; 
+     width: 90%;
+ }
+
+ .right-container {
+   position: relative;
+   left: 0%;
+    max-width: 320px;
+    border: 2px solid red;
+ }
+
+  .mini-container p strong {
+    display: block;
+    padding-bottom: 0.4rem;
+  }
+
+ .mini-container {
+   text-align: center;
+   padding: 15px 15px;
+   border-radius: 3px;
+   font-size: 14px;
+   text-align: center;
+ }
+
+ #btn {
+   padding: 10px 5px;
+   font-size: 10px;
+   width: 90%;
+   font-size: 14px;
+   margin-bottom: 1rem;
+   border: none;
+   margin-right: 3rem;
+  }
+
+#form p {
+  color: var(--Dark-Blue);
+  font-weight: 400;
+  font-size: 9px;
+  width: 80%;
+  /* margin-right: 4rem; */
+}
+   
+#form p span {
+     color: rgba(255, 0, 0, 0.685);
+}
+}
